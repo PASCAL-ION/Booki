@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    padding: 0 40px;
+    /* max-width: 1500px; */
+}
+
+.info i {
+    color: rgba(0, 101, 252, 255);
+    margin-right: 10px;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.blueStar {
+    color: rgba(0, 101, 252, 255);
+    font-size: 14px;
+}
+
+.grayStar {
+    color: #cecece;
+    font-size: 14px;
+}
+
+/* ----------------------------------HEADER---------------------------------- */
+header {
+    width: 100%;
+    min-width: 365px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 50px;
+}
+
+header img {
+    margin-left: 14px;
+}
+
+header nav {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+nav a {
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 3px;
+}
+
+nav a:hover::before {
+    background-color: rgba(0, 101, 252, 255);
+}
+
+nav a:hover {
+    color: rgba(0, 101, 252, 255);
+}
+
+
+/* *************************************************searchBlock**************************************** */
+.searchBlock {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBlock h1 {
+    margin-bottom: 10px;
+}
+
+.searchBlock form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+form .iconeLoca {
+    background: #f2f2f2;
+    margin: 0;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+form input {
+    height: 48px;
+    border: 1px solid lightgray;
+    font-weight: bold;
+    position: relative;
+}
+
+form button {
+    height: 48px;
+    width: 133px;
+    padding: 5px 12px;
+    background: rgba(0, 101, 252, 255);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+}
+
+form button span {
+    color: white;
+    font-size: 18px;
+
+}
+
+/* --------------------------------------------FILTRES--------------------------------------------- */
+
+.filtres {
+    display: flex;
+    align-items: center;
+    max-width: 928px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.filtres h2 {
+    margin-right: 30px;
+}
+
+.filtres ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtres ul li {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    height: 50px;
+    padding: 10px 20px 10px 65px;
+    border-radius: 150px;
+    position: relative;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.filtres ul li i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 50%);
+    left: calc(-50% + 50% - 1px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #deeafe;
+    color: rgba(0, 101, 252, 255);
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.filtres ul li:hover {
+    background: rgba(0, 101, 252, 255);
+    color: white;
+}
+
+
+/* **************************************************Section hebergement***************************************************** */
+
+.mainContainer-Hebergement {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+/*----------------------------------Hebergement gauche-------------------------------------------*/
+
+.leftContainer {
+    display: flex;
+    max-width: 65%;
+    min-width: 320px;
+    margin-top: 40px;
+    flex-direction: column;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 42px 40px;
+    justify-items: center;
+    align-self: center;
+    margin-right: 40px;
+}
+
+.leftContainer h2 {
+    margin-bottom: 23px;
+}
+
+.leftContainer p:last-child {
+    font-weight: 700;
+    margin-top: 13px;
+}
+
+
+.left-cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-cardContainer .card {
+    width: 250px;
+    height: 200px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 5px solid white;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 16px;
+}
+
+.card .infoLogement>:nth-child(3n) img {
+    margin-right: 2px;
+}
+
+.leftContainer .card .photo {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.left-cardContainer .card .infoLogement {
+    margin-top: 5px;
+    margin-left: 11px;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------Hebergement droite-------------------------------------------------------------*/
+
+.rightContainer {
+    width: 32%;
+    min-width: 365px;
+    min-height: 625px;
+    margin-top: 40px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 42px 40px 1px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.right-cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightContainerTitleStar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.rightContainerTitleStar i {
+    font-size: 24px;
+}
+
+.rightContainer .card {
+    width: 343px;
+    height: 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding-right: 54px;
+    margin-bottom: 33px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rightContainer .card .photo {
+    width: 39%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.rightContainer .card .infoLogement {
+    margin-left: 15px;
+}
+
+.rightContainer .card .infoLogement>:nth-child(2n) {
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 13px;
+}
+
+/************************************************************************************************************************************/
+
+/**********************************************************Section activites*********************************************************/
+
+.mainContainer-Activites {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-width: 320px;
+}
+
+.cardContainer-Activites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 27px;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-height: 445px;
+    align-self: stretch;
+    margin-bottom: 30px;
+}
+
+.blocks .card {
+    width: 300px;
+    height: 445px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    margin: 0 43px 43px 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blocks .card h3 {
+    margin: 24px 0 0 20px;
+}
+
+.cardContainer-Activites .card img {
+    width: 100%;
+    height: 87%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.blocks .fortDePomegues {
+    height: 235px;
+}
+
+.blocks .fortDePomegues img {
+    height: 76%;
+}
+
+.blocks .ilesDuFrioul {
+    height: 165px;
+}
+
+.blocks .ilesDuFrioul img {
+    height: 66%;
+}
+
+.blocks .notreDameDeLaGarde {
+    height: 195px;
+}
+
+.blocks .notreDameDeLaGarde img {
+    height: 70%;
+}
+
+.blocks .parcLongchamp {
+    height: 209px;
+}
+
+.blocks .parcLongchamp img {
+    height: 72%;
+}
+
+
+/*************************************************************************************************************************************/
+
+/*--------------------------------------------------------------Footer--------------------------------------------------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background: #F2F2F2;
+    width: 100%;
+    padding: 50px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    /* min-width: 365px; */
+}
+
+footer div {
+    margin-right: 227px;
+}
+
+footer div h4 {
+    margin-bottom: 23px;
+}
+
+footer div li {
+    line-height: 35px;
+}
+
+
+/************************************************************************Responsive*****************************************************************************/
+@media screen and (max-width: 1468px) and (min-width: 1127px) {
+    .cardContainer-Activites .blocks:last-child {
+        margin-left: 50%;
+        transform: translate(-50%);
+        flex-direction: row;
+    }
+}
+
+
+
+/*--------------------------------------------------------------------------Tablette-----------------------------------------------------------------------------*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .mainContainer-Hebergement {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .leftContainer {
+        order: 2;
+        max-width: 100%;
+        align-items: center;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    .left-cardContainer {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .rightContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+    }
+
+    .right-cardContainer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .mainContainer-Activites {
+        align-items: center;
+        background: #f2f2f2;
+        border-radius: 20px;
+        padding: 40px 50px;
+    }
+
+    .cardContainer-Activites {
+        justify-content: center;
+        min-width: 100%;
+    }
+
+    .cardContainer-Activites .blocks {
+        margin-bottom: 20px;
+    }
+
+    .cardContainer-Activites .blocks .card {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer div {
+        margin-right: 100px;
+        margin-bottom: 50px;
+    }
+
+}
+
+/*--------------------------------------------------------------------------Telephone-----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        width: 100%;
+    }
+
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*-------------------Header------------------*/
+    header nav {
+        width: 100%;
+    }
+
+    header nav a {
+        font-size: 16px;
+    }
+
+
+    header img {
+        margin-bottom: 40px;
+        width: 150px;
+        height: 75px;
+    }
+
+    header nav a::before {
+        top: 34px;
+        background: #f2f2f2;
+    }
+
+    header nav a:hover::before {
+        top: 34px;
+    }
+
+    /*--------------searchBlock--------------------------*/
+    .searchBlock {
+        margin: 0 20px;
+    }
+
+    .searchBlock h1 {
+        font-size: 20px;
+    }
+
+    .searchBlock p {
+        font-size: 13px;
+    }
+
+    main .searchBlock form {
+        margin: 37px auto 37px auto;
+        position: relative;
+        width: 334px;
+    }
+
+    form .iconeLoca {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    form input {
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    form button span {
+        display: none;
+    }
+
+    form button {
+        position: absolute;
+        left: 100%;
+        transform: translate(-100%);
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        background: rgba(0, 101, 252, 255) url(../icone/loupe.svg) no-repeat center;
+    }
+
+    .filtres {
+        flex-direction: column;
+    }
+
+    .filtres ul li {
+        margin-top: 14px;
+    }
+
+    /*--------------------------------Hebergement--------------------------------------------*/
+
+    .mainContainer-Hebergement {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .leftContainer {
+        margin: 40px auto 0 auto;
+        padding: 20px;
+        order: 2;
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+        background: white;
+    }
+
+    .leftContainer .left-cardContainer {
+        flex-direction: column;
+    }
+
+    .leftContainer .left-cardContainer .card {
+        width: 270px;
+    }
+
+    .rightContainer {
+        width: 100%;
+        border-radius: 0;
+        flex-direction: column;
+    }
+
+    .rightContainer .card {
+        width: 100%;
+    }
+
+    /*---------------------------------Activites-----------------------------------*/
+    .mainContainer-Activites {
+        margin: 28px auto 50px auto;
+        padding: 0 20px;
+    }
+
+    .cardContainer-Activites {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 30px auto 0 30px;
+    }
+
+    .cardContainer-Activites .blocks {
+        margin-bottom: 0;
+    }
+
+    .cardContainer-Activites .card {
+        height: 190px;
+        width: 270px;
+        margin-bottom: 25px !important;
+        margin-right: 0;
+    }
+
+    .cardContainer-Activites .card img {
+        height: 70%;
+    }
+
+    /*---------------------------Footer-------------------------------------*/
+    footer {
+        min-width: 365px;
+    }
+
+    footer div {
+        margin-right: 0;
+    }
+
+    footer div ul {
+        margin-bottom: 40px;
+    }
+
+    footer div h4 {
+        margin-bottom: 23px;
+    }
+}
